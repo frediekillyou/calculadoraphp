@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculadora PHP</h1>
+    <form  action="calculadora.php" method="post">
+        <label for="num1">Ingrese el primer digito</label><br>
+        <input type="number" name="n1" placeholder="ingrese un numero" required pattern="\d+">
+        <br>
+        <label for="num2">Ingrese el primer digito</label><br>
+        <input type="number" name="n2" placeholder="ingrese un numero" required pattern="\d+"><br>
+        <br>
+        <label for="text">operacion</label><br>
+        <select name="operacion">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicación</option>
+            <option value="division">División</option>
+        </select><br><br>
+        <input type="submit" value="Calcular">
+    </form>
+</body>
+</html>
